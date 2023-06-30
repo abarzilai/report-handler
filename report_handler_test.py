@@ -15,6 +15,8 @@ import time
 import shutil
 
 def config_logger():
+    if not os.path.exists("Logs"):
+            os.makedirs("Logs")
     filename = r'Logs\report_handler_test.log'
     rotating_handler = logging.handlers.RotatingFileHandler(filename, maxBytes=100000,backupCount=1)
     #file_handler = log.FileHandler(filename=filename)
