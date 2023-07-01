@@ -9,12 +9,27 @@ from os.path import isfile, join
 import time 
 from zipfile import ZipFile
 from os.path import basename
-import logging as log
+import logging #as log
 
+
+class Log(object): 
+    """
+    Logging disable\enable mechanism of the tool
+    """
+    def __init__(self,log_enable):
+        self.log_enable = log_enable
+    def info(self,msg):
+        if self.log_enable:
+            return logging.info(msg)
+        else:
+            return None
+
+# log of the tool
+log = None
     
 class Cleaner(object):
     """
-    class Cleaner defines wich files and how will be cleaned from directory.
+    Class Cleaner defines wich files and how will be cleaned from directory.
     Rules:
     1) The cleaner has single sourse directory.
     2) The cleaner will delete a file that has extentions from self.ext_to_del
@@ -123,14 +138,16 @@ class ReportHandler(object):
     """
     Class defines clean and archive policies on the folders.
     """
-    def __init__(self, log=None) -> None:
+    def __init__(self, log_enable=False) -> None:
+        global log
+        log = Log(log_enable)
         super(ReportHandler,self).__init__()
         # List of folder objects to be cleaned.
         self._under_clean = []
         # List of folder objects to be archived. 
         self._under_archive = []
 
-    def set_cleaner(self, folder_path:str,age_before_del_hour:int,ext_to_del=["log", "txt"]) -> None:
+    def set_cleaner(self, folder_path:str,age_before_del_hour:int,ext_to_del=["log", "txt"]) -> bool:
         """
         Define clean policy on direction.
         The files of specified extentions will be deleted in 'folder_path'.
