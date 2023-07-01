@@ -235,7 +235,7 @@ class RandTest(object):
         log.info(f"Maximum iteration count:{self.max_loop_count}")
         self.start_time = time.time()
         log.info(f"Start time:{self.start_time}")
-        self.report_handler = ReportHandler(log=log)
+        self.report_handler = ReportHandler(log_enable=False)
         #self.is_archivator_already_run = False
         self.main_loop()
 
