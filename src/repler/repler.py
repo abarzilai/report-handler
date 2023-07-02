@@ -1,4 +1,6 @@
 #############################################
+# Copyright (c) [2023] [Alexander Barzilai] #
+# MIT License                               #
 # version 1.0.0                             #
 # Reports handler                           #
 # author: Alexander Barzilai                #
@@ -21,6 +23,11 @@ class Log(object):
     def info(self,msg):
         if self.log_enable:
             return logging.info(msg)
+        else:
+            return None
+    def error(self,msg):
+        if self.log_enable:
+            return logging.error(msg)
         else:
             return None
 
@@ -109,7 +116,8 @@ class Archivator(object):
         """
         Archive files with defined extentions.
         """
-        zip_create_staus = False
+        zip_run_staus = False
+        zip_created = False
         arch_file_name = self.archive_prefix + "_" + str(time.time()) + ".zip"
         arch_file_full_path = join(self.archivation_path, arch_file_name)
         try:
@@ -123,15 +131,18 @@ class Archivator(object):
                                filePath = os.path.join(folderName, filename)
                                # Add file to zip
                                zipObj.write(filePath, basename(filePath))
+                               zip_created = True
                                if self.delete_archived_files:
                                    os.remove(filePath)
-            zip_create_staus = True
+            if not zip_created:
+                os.remove(arch_file_full_path)
+            zip_run_staus = True
             self.arch_file_name = arch_file_name
             log.info(f"Created zip file: {arch_file_full_path}")
         except Exception as e:
             log.error("FAIL: ZIP archive creation failed!")
             raise Exception(e)
-        return zip_create_staus
+        return zip_run_staus
 
 
 class ReportHandler(object):
@@ -146,6 +157,10 @@ class ReportHandler(object):
         self._under_clean = []
         # List of folder objects to be archived. 
         self._under_archive = []
+
+    def set_log_on(self):
+        global log
+        log = Log(log_enable=True)
 
     def set_cleaner(self, folder_path:str,age_before_del_hour:int,ext_to_del=["log", "txt"]) -> bool:
         """

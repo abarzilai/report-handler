@@ -34,7 +34,7 @@ def config_logger():
 
 config_logger()
 
-from repler import ReportHandler
+from repler.repler import ReportHandler
 
 class SelfTest(object):
     
@@ -314,11 +314,14 @@ class RandTest(object):
             for a in self.report_handler._under_archive:               
                 onlyfiles = [f for f in listdir(a.sourse_path) if isfile(join(a.sourse_path, f))]
                 assert  onlyfiles == expected["in_sourse"][a.sourse_path]
-                with ZipFile(join(a.archivation_path, a.arch_file_name), 'r') as f:
-                    names = f.namelist()
-                names.sort()
-                expected["in_archive"][a.archivation_path].sort()
-                assert  names == expected["in_archive"][a.archivation_path]
+                if expected["in_archive"][a.archivation_path]:
+                    with ZipFile(join(a.archivation_path, a.arch_file_name), 'r') as f:
+                        names = f.namelist()
+                    names.sort()
+                    expected["in_archive"][a.archivation_path].sort()
+                    assert  names == expected["in_archive"][a.archivation_path]
+                else:
+                    assert not os.path.isfile(join(a.archivation_path, a.arch_file_name))
         log.info("==========PASS==========")
 
 
