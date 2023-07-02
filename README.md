@@ -1,4 +1,4 @@
-# report-handler
+# repler: report handler
 
 The tool keeps you project envieronment clean by delete or archive files with specified extensions.
 
