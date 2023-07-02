@@ -235,7 +235,7 @@ class RandTest(object):
         log.info(f"Maximum iteration count:{self.max_loop_count}")
         self.start_time = time.time()
         log.info(f"Start time:{self.start_time}")
-        self.report_handler = ReportHandler(log_enable=False)
+        self.report_handler = ReportHandler(log_enable=True)
         #self.is_archivator_already_run = False
         self.main_loop()
 
@@ -250,6 +250,8 @@ class RandTest(object):
             actions:list = self.get_actions_order()
             log.info(f"Actions: {actions}")
             self.apply_policy(order)
+            self.report_handler.show_archivator()
+            self.report_handler.show_cleaner()
             self.rand_pre_test()
             self.is_archivator_already_run = False
             for act in actions:
@@ -425,50 +427,13 @@ class RandTest(object):
 
     def get_archive_sourses(self)-> list:
         arcs = self.report_handler._under_archive
-        arc_sourse = [a.sourse_path for a in arcs]# if a.__class__.__name__=="Archivator"]
+        arc_sourse = [a.sourse_path for a in arcs]
         return arc_sourse
 
     def get_clean_sourses(self)-> list:
         clean = self.report_handler._under_clean
-        clean_sourse = [c.path for c in clean]# if c.__class__.__name__=="Archivator"]
-        return clean_sourse
-
-    #def get_expected(self, order, act):
-    #    expected = {"in_sourse":{}, "in_archive":{}}
-    #    if act == "archive":
-    #        for a in self.report_handler._under_archive: 
-    #            expected["in_archive"][a.archivation_path] = []
-    #            onlyfiles = [f for f in listdir(a.sourse_path) if isfile(join(a.sourse_path, f))]
-    #            expected["in_sourse"][a.sourse_path] = onlyfiles
-    #            for ext in a.ext_to_arch:
-    #                for f in onlyfiles:
-    #                    if f.endswith(f".{ext}"):
-    #                        expected["in_archive"][a.archivation_path].append(f)
-    #                        if a.delete_archived_files:
-    #                            expected["in_sourse"][a.sourse_path].remove(f)
-    #    elif act == "clean" or (act == "archive" and self.is_archivator_already_run):
-    #        arcs = self.report_handler._under_archive
-    #        arc_sourse = [a.sourse_path for a in arcs if a.__class__.__name__=="Archivator"]
-    #        for c in self.report_handler._under_clean: 
-    #            onlyfiles = [f for f in listdir(c.path) if isfile(join(c.path, f))]
-    #            expected["in_sourse"][c.path] = onlyfiles                
-    #            for ext in c.ext_to_del:
-    #                for f in onlyfiles:
-    #                    if c.path not in arc_sourse and f.endswith(f".{ext}"):
-    #                        expected["in_sourse"][c.path].remove(f)
-    #                    if c.path in arc_sourse:
-    #                       _delete = True
-    #                       for a in arcs:
-    #                           if ext in a.ext_to_arch and self.is_archivator_already_run == False:
-    #                               _delete = False
-    #                               break
-    #                       if _delete:
-    #                           expected["in_sourse"][c.path].remove(f)
-    #    return expected
-                
-                               
-
-   
+        clean_sourse = [c.path for c in clean]
+        return clean_sourse 
 
     def apply_policy(self, order):
         log.info("Applying policys on folders.")
@@ -480,10 +445,6 @@ class RandTest(object):
                 result = self.report_handler.set_cleaner(folder_path=folder_path,
                                                          age_before_del_hour=age_before_del_hour,
                                                          ext_to_del=extentions)
-                #if result:
-                #    log.info(f"Aplying cleaner on {folder_path}")
-                #    log.info(f"\tage_before_del_hour: {age_before_del_hour}")
-                #    log.info(f"\tExtention to delete: {self.report_handler._under_clean[-1].ext_to_del}")
             else:
                 sourse_folder = self.get_sourse_folder()
                 archive_folder = rf"{sourse_folder}\Archive"
@@ -527,6 +488,7 @@ class RandTest(object):
                               ("archive", "clean"),
                               ("clean",),
                               ("archive",)])
+
     def get_path(self):
         l = ["SelfTest", "SelfTest1", "SelfTest2"]
         path = random.choice(l)
@@ -544,10 +506,7 @@ class RandTest(object):
         path = self.get_path()
         return rf"RandomTest\{path}"
 
-    #def get_archive_folder(self):
-    #     path = self.get_sourse_folder()
-    #     return rf"{path}\Archive"
-
+    
     def get_archive_prefix(self):
         return "archive"
 
