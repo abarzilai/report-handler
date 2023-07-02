@@ -9,7 +9,7 @@ from os.path import isfile, join
 import time 
 from zipfile import ZipFile
 from os.path import basename
-import logging #as log
+import logging
 
 
 class Log(object): 
@@ -182,9 +182,9 @@ class ReportHandler(object):
         for c in self._under_clean:
             log.info(f"============================================")
             log.info(f"Cleaner #{self._under_clean.index(c) + 1}")
-            log.info(f"Path: {c.path}")
-            log.info(f"age_before_del_hour: {c.age_before_del_hour}")
-            log.info(f"ext_to_del: {c.ext_to_del}")
+            log.info(f"\tPath: {c.path}")
+            log.info(f"\tage_before_del_hour: {c.age_before_del_hour}")
+            log.info(f"\text_to_del: {c.ext_to_del}")
 
     def set_archivator(self,archive_prefix,sourse_folder,archive_folder,ext_to_arch=["log", "txt"],delete_archived_files=True) -> None:
         """
@@ -229,10 +229,10 @@ class ReportHandler(object):
         for a in self._under_archive:
             log.info(f"============================================")
             log.info(f"Archivator #{self._under_archive.index(a) + 1}")
-            log.info(f"Sourse path: {a.sourse_path}")
-            log.info(f"Archive path: {a.archivation_path}")            
-            log.info(f"Archive prefix: {a.archive_prefix}")            
-            log.info(f"ext_to_arch: {a.ext_to_arch}")
+            log.info(f"\tSourse path: {a.sourse_path}")
+            log.info(f"\tArchive path: {a.archivation_path}")            
+            log.info(f"\tArchive prefix: {a.archive_prefix}")            
+            log.info(f"\text_to_arch: {a.ext_to_arch}")
             
     def clean(self):
         """
