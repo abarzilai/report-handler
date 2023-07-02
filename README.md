@@ -2,7 +2,7 @@
 
 The tool keeps you project envieronment clean by delete or archive files with specified extensions.
 
-Usage:
+# Usage:
 
 # Create report handler with logging enable.
 rh = ReportHandler(log_enable=True)
