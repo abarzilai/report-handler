@@ -1,0 +1,877 @@
+07:17:24[INFO ] report_handler :23  info                      -> 	Extention to delete: ['yyy']
+07:17:24[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest
+07:17:24[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest\Archive
+07:17:24[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['yyy', 'zzz', 'txt', 'log']
+07:17:24[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:24[INFO ] report_handler :23  info                      -> The archivator with sourse path RandomTest\SelfTest allready exist.
+07:17:24[INFO ] report_handler :23  info                      -> Updating archivation_path = RandomTest\SelfTest\Archive
+07:17:24[INFO ] report_handler :23  info                      -> Updating ext_to_arch = ['log']
+07:17:24[INFO ] report_handler :23  info                      -> Updating delete_archived_files = True
+07:17:24[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest1
+07:17:24[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest1\Archive
+07:17:24[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['txt', 'yyy', 'zzz', 'log']
+07:17:24[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:24[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest2
+07:17:24[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest2\Archive
+07:17:24[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['zzz']
+07:17:24[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:24[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['yyy', 'zzz', 'txt', 'log']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Archivator #2
+07:17:24[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\Archive
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['txt', 'yyy', 'zzz', 'log']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Archivator #3
+07:17:24[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['zzz']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:24[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_del: ['yyy']
+07:17:24[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.log']
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.txt', 'file.zzz']
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.txt', 'file.yyy', 'file.zzz']
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.log', 'file.yyy']
+07:17:24[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:24[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:24[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:24[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:24[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:24[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:24[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:24[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': ['file.log', 'file.yyy'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1': ['file.txt', 'file.zzz'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': ['file.txt', 'file.yyy', 'file.zzz']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest\\Archive': ['file.yyy', 'file.log'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1\\Archive': ['file.txt', 'file.zzz'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2\\Archive': ['file.zzz']}}
+07:17:24[INFO ] report_handler :23  info                      -> Archivation...
+07:17:24[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive\archive_1688271444.8148575.zip
+07:17:24[INFO ] report_handler :23  info                      -> Created archive name archive_1688271444.8148575.zip
+07:17:24[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\Archive\archive_1688271444.8169122.zip
+07:17:24[INFO ] report_handler :23  info                      -> Created archive name archive_1688271444.8169122.zip
+07:17:24[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive\archive_1688271444.820933.zip
+07:17:24[INFO ] report_handler :23  info                      -> Created archive name archive_1688271444.820933.zip
+07:17:24[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:24[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:24[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:24[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:24[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:24[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+07:17:24[INFO ] report_handler_test:409 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.yyy is 0 hours.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.yyy is 0 hours.
+07:17:24[INFO ] report_handler_test:333 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.yyy is too yong.
+07:17:24[INFO ] report_handler_test:414 get_expected_FSM          -> Next FSM state: END
+07:17:24[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:24[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': ['file.log', 'file.yyy']}, 'in_archive': {}}
+07:17:24[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:24[INFO ] report_handler :23  info                      -> Same path of archivator and cleaner: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:24[INFO ] report_handler :23  info                      -> Resetting flag 'archivator_finished' = False
+07:17:24[INFO ] report_handler :23  info                      -> Deletting extentions: ['yyy']
+07:17:24[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:24[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:24[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #299
+07:17:24[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner', 'archivator', 'archivator']
+07:17:24[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive',)
+07:17:24[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:24[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest1
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:24[INFO ] report_handler :23  info                      -> 	Extention to delete: ['txt', 'log', 'zzz', 'yyy']
+07:17:24[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest
+07:17:24[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest\Archive
+07:17:24[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['zzz', 'yyy', 'log']
+07:17:24[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+07:17:24[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest1
+07:17:24[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest1\Archive
+07:17:24[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['yyy', 'log', 'zzz']
+07:17:24[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:24[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['zzz', 'yyy', 'log']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Archivator #2
+07:17:24[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\Archive
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['yyy', 'log', 'zzz']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:24[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_del: ['txt', 'log', 'zzz', 'yyy']
+07:17:24[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.log', 'file.yyy']
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.yyy']
+07:17:24[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:24[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:24[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:24[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:24[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:24[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:24[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:24[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': ['file.txt'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1': ['file.log', 'file.txt', 'file.yyy']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest\\Archive': ['file.zzz', 'file.yyy', 'file.log'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1\\Archive': ['file.yyy', 'file.log']}}
+07:17:24[INFO ] report_handler :23  info                      -> Archivation...
+07:17:24[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive\archive_1688271444.8913848.zip
+07:17:24[INFO ] report_handler :23  info                      -> Created archive name archive_1688271444.8913848.zip
+07:17:24[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\Archive\archive_1688271444.894904.zip
+07:17:24[INFO ] report_handler :23  info                      -> Created archive name archive_1688271444.894904.zip
+07:17:24[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:24[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:24[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #300
+07:17:24[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner', 'cleaner', 'cleaner']
+07:17:24[INFO ] report_handler_test:251 main_loop                 -> Actions: ('clean', 'archive')
+07:17:24[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:24[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest2
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:24[INFO ] report_handler :23  info                      -> 	Extention to delete: ['zzz', 'txt', 'log']
+07:17:24[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest1
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:24[INFO ] report_handler :23  info                      -> 	Extention to delete: ['log', 'zzz', 'txt']
+07:17:24[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:24[INFO ] report_handler :23  info                      -> 	Extention to delete: ['yyy', 'zzz']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:24[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_del: ['zzz', 'txt', 'log']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Cleaner #2
+07:17:24[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_del: ['log', 'zzz', 'txt']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Cleaner #3
+07:17:24[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:24[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_del: ['yyy', 'zzz']
+07:17:24[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.log', 'file.txt', 'file.zzz']
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.txt', 'file.yyy']
+07:17:24[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:24[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:24[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:24[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+07:17:24[INFO ] report_handler_test:394 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.zzz is 0 hours.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.zzz is 0 hours.
+07:17:24[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.zzz, age: 0
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.txt is 0 hours.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.txt is 0 hours.
+07:17:24[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.txt, age: 0
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log is 0 hours.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log is 0 hours.
+07:17:24[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log, age: 0
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.log is 0 hours.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.log is 0 hours.
+07:17:24[INFO ] report_handler_test:333 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.log is too yong.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.zzz is 0 hours.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.zzz is 0 hours.
+07:17:24[INFO ] report_handler_test:333 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.zzz is too yong.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.txt is 0 hours.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.txt is 0 hours.
+07:17:24[INFO ] report_handler_test:333 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.txt is too yong.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.yyy is 0 hours.
+07:17:24[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.yyy is 0 hours.
+07:17:24[INFO ] report_handler_test:333 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.yyy is too yong.
+07:17:24[INFO ] report_handler_test:407 get_expected_FSM          -> Next FSM state: END
+07:17:24[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:24[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': ['file.yyy'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1': ['file.log', 'file.txt', 'file.zzz'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': ['file.txt', 'file.yyy']}, 'in_archive': {}}
+07:17:24[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:24[INFO ] report_handler :23  info                      -> Deletting extentions: ['zzz', 'txt', 'log']
+07:17:24[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log...
+07:17:24[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.txt...
+07:17:24[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.zzz...
+07:17:24[INFO ] report_handler :23  info                      -> Deletting extentions: ['log', 'zzz', 'txt']
+07:17:24[INFO ] report_handler :23  info                      -> Deletting extentions: ['yyy', 'zzz']
+07:17:24[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:24[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:24[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:24[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:24[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:24[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:24[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:24[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:24[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:24[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {}, 'in_archive': {}}
+07:17:24[INFO ] report_handler :23  info                      -> Archivation...
+07:17:24[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:24[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:24[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #301
+07:17:24[INFO ] report_handler_test:249 main_loop                 -> Order: ['archivator', 'archivator', 'archivator']
+07:17:24[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive', 'clean')
+07:17:24[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:24[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest
+07:17:24[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest\Archive
+07:17:24[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['txt', 'zzz', 'yyy']
+07:17:24[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+07:17:24[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest2
+07:17:24[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest2\Archive
+07:17:24[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['txt', 'zzz', 'yyy', 'log']
+07:17:24[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:24[INFO ] report_handler :23  info                      -> The archivator with sourse path RandomTest\SelfTest allready exist.
+07:17:24[INFO ] report_handler :23  info                      -> Updating archivation_path = RandomTest\SelfTest\Archive
+07:17:24[INFO ] report_handler :23  info                      -> Updating ext_to_arch = ['log', 'txt', 'zzz', 'yyy']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:24[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['txt', 'zzz', 'yyy']
+07:17:24[INFO ] report_handler :23  info                      -> ============================================
+07:17:24[INFO ] report_handler :23  info                      -> Archivator #2
+07:17:24[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive
+07:17:24[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:24[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['txt', 'zzz', 'yyy', 'log']
+07:17:24[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.log', 'file.yyy', 'file.zzz']
+07:17:24[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.zzz']
+07:17:24[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:24[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:24[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:24[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:24[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:24[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': ['file.log'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': ['file.zzz']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest\\Archive': ['file.zzz', 'file.yyy'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2\\Archive': ['file.zzz']}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive\archive_1688271445.0035236.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.0035236.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive\archive_1688271445.0069673.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.0069673.zip
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+07:17:25[INFO ] report_handler_test:409 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+07:17:25[INFO ] report_handler_test:414 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #302
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('clean', 'archive')
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['zzz', 'log', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['zzz', 'log', 'txt']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.zzz']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:394 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz is 0 hours.
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz is 0 hours.
+07:17:25[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz, age: 0
+07:17:25[INFO ] report_handler_test:407 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': []}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting extentions: ['zzz', 'log', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #303
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner', 'cleaner']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive', 'clean')
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['log', 'yyy', 'zzz', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> The cleaner with path RandomTest\SelfTest1 allready exist.
+07:17:25[INFO ] report_handler :23  info                      -> 	Updating ext_to_del = ['yyy', 'zzz', 'txt'].
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['yyy', 'zzz', 'txt']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.log', 'file.yyy']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:394 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.yyy is 0 hours.
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.yyy is 0 hours.
+07:17:25[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.yyy, age: 0
+07:17:25[INFO ] report_handler_test:407 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1': ['file.log']}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting extentions: ['yyy', 'zzz', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.yyy...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #304
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['archivator', 'cleaner', 'archivator', 'cleaner', 'archivator']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive',)
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest
+07:17:25[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['log', 'yyy', 'zzz']
+07:17:25[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['zzz']
+07:17:25[INFO ] report_handler :23  info                      -> The archivator with sourse path RandomTest\SelfTest allready exist.
+07:17:25[INFO ] report_handler :23  info                      -> Updating archivation_path = RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler :23  info                      -> Updating ext_to_arch = ['log', 'yyy']
+07:17:25[INFO ] report_handler :23  info                      -> Updating delete_archived_files = True
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['txt', 'yyy', 'zzz', 'log']
+07:17:25[INFO ] report_handler :23  info                      -> The archivator with sourse path RandomTest\SelfTest allready exist.
+07:17:25[INFO ] report_handler :23  info                      -> Updating archivation_path = RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler :23  info                      -> Updating ext_to_arch = ['log', 'yyy', 'zzz', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['log', 'yyy', 'zzz']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['zzz']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #2
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['txt', 'yyy', 'zzz', 'log']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.txt']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.zzz']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': ['file.log', 'file.txt', 'file.yyy', 'file.zzz']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest\\Archive': ['file.log', 'file.yyy', 'file.zzz']}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive\archive_1688271445.1299953.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.1299953.zip
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #305
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner', 'archivator', 'cleaner', 'archivator']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive',)
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['zzz', 'yyy', 'txt']
+07:17:25[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest
+07:17:25[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['yyy', 'log', 'zzz', 'txt']
+07:17:25[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['zzz', 'log']
+07:17:25[INFO ] report_handler :23  info                      -> The archivator with sourse path RandomTest\SelfTest allready exist.
+07:17:25[INFO ] report_handler :23  info                      -> Updating archivation_path = RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler :23  info                      -> Updating ext_to_arch = ['zzz', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['yyy', 'log', 'zzz', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['zzz', 'yyy', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #2
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['zzz', 'log']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.txt']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.txt']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.yyy']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': []}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest\\Archive': ['file.txt']}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive\archive_1688271445.1727002.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.1727002.zip
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #306
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('clean',)
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['log']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['log']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.log', 'file.yyy']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:394 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log is 0 hours.
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log is 0 hours.
+07:17:25[INFO ] report_handler_test:333 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log is too yong.
+07:17:25[INFO ] report_handler_test:407 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': ['file.log', 'file.yyy']}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting extentions: ['log']
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #307
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner', 'archivator']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive', 'clean')
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['yyy', 'zzz', 'log', 'txt']
+07:17:25[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['log', 'zzz']
+07:17:25[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['log', 'zzz']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['yyy', 'zzz', 'log', 'txt']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.log', 'file.zzz']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.zzz']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': []}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2\\Archive': ['file.log', 'file.zzz']}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive\archive_1688271445.223757.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.223757.zip
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+07:17:25[INFO ] report_handler_test:409 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.zzz is 0 hours.
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.zzz is 0 hours.
+07:17:25[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.zzz, age: 0
+07:17:25[INFO ] report_handler_test:414 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1': []}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting extentions: ['yyy', 'zzz', 'log', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\file.zzz...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #308
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('clean',)
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['zzz']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['zzz']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.log', 'file.zzz']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:394 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz is 0 hours.
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz is 0 hours.
+07:17:25[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz, age: 0
+07:17:25[INFO ] report_handler_test:407 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': ['file.log']}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting extentions: ['zzz']
+07:17:25[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #309
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['archivator', 'cleaner', 'archivator', 'archivator']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('clean', 'archive')
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['yyy', 'txt']
+07:17:25[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['yyy', 'log', 'txt', 'zzz']
+07:17:25[INFO ] report_handler :23  info                      -> The archivator with sourse path RandomTest\SelfTest2 allready exist.
+07:17:25[INFO ] report_handler :23  info                      -> Updating archivation_path = RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler :23  info                      -> Updating ext_to_arch = ['zzz', 'log', 'yyy']
+07:17:25[INFO ] report_handler :23  info                      -> Updating delete_archived_files = True
+07:17:25[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest1
+07:17:25[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest1\Archive
+07:17:25[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['yyy']
+07:17:25[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['yyy', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Archivator #2
+07:17:25[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\Archive
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['yyy']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['yyy', 'log', 'txt', 'zzz']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.txt', 'file.yyy']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.yyy', 'file.zzz']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.txt', 'file.zzz']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:394 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.txt is 0 hours.
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.txt is 0 hours.
+07:17:25[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.txt, age: 0
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz is 0 hours.
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz is 0 hours.
+07:17:25[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz, age: 0
+07:17:25[INFO ] report_handler_test:407 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': []}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting extentions: ['yyy', 'log', 'txt', 'zzz']
+07:17:25[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.txt...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\file.zzz...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': ['file.txt', 'file.yyy'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1': ['file.yyy', 'file.zzz']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2\\Archive': ['file.yyy', 'file.txt'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1\\Archive': ['file.yyy']}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive\archive_1688271445.3345203.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.3345203.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1\Archive\archive_1688271445.340535.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.340535.zip
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #310
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['cleaner']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive', 'clean')
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['yyy', 'txt', 'log', 'zzz']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['yyy', 'txt', 'log', 'zzz']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.log']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:394 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log is 0 hours.
+07:17:25[INFO ] report_handler_test:339 _get_file_age_hour        -> Age of C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log is 0 hours.
+07:17:25[INFO ] report_handler_test:331 _is_old                   -> The candidat for delition: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log, age: 0
+07:17:25[INFO ] report_handler_test:407 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': []}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting extentions: ['yyy', 'txt', 'log', 'zzz']
+07:17:25[INFO ] report_handler :23  info                      -> Deletting C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\file.log...
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #311
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['archivator', 'cleaner', 'archivator']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive', 'clean')
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['log', 'zzz']
+07:17:25[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['yyy']
+07:17:25[INFO ] report_handler :23  info                      -> The archivator with sourse path RandomTest\SelfTest2 allready exist.
+07:17:25[INFO ] report_handler :23  info                      -> Updating archivation_path = RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler :23  info                      -> Updating ext_to_arch = ['zzz', 'log']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['log', 'zzz']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 0
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['yyy']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.log']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest1: ['file.log', 'file.txt']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': []}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2\\Archive': ['file.log']}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive\archive_1688271445.408088.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.408088.zip
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:clean
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+07:17:25[INFO ] report_handler_test:409 get_expected_FSM          -> --------------FSM state: EXPECT_CLEAN_AFTER_ARCHIVE
+07:17:25[INFO ] report_handler_test:414 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest1': ['file.log', 'file.txt']}, 'in_archive': {}}
+07:17:25[INFO ] report_handler :23  info                      -> Cleaning files...
+07:17:25[INFO ] report_handler :23  info                      -> Deletting extentions: ['yyy']
+07:17:25[INFO ] report_handler_test:303 verify_expected           -> Verifying results...
+07:17:25[INFO ] report_handler_test:319 verify_expected           -> ==========PASS==========
+07:17:25[INFO ] report_handler_test:247 main_loop                 -> 
+
+Start loop #312
+07:17:25[INFO ] report_handler_test:249 main_loop                 -> Order: ['archivator', 'cleaner', 'archivator']
+07:17:25[INFO ] report_handler_test:251 main_loop                 -> Actions: ('archive',)
+07:17:25[INFO ] report_handler_test:439 apply_policy              -> Applying policys on folders.
+07:17:25[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['zzz', 'log', 'yyy', 'txt']
+07:17:25[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    False
+07:17:25[INFO ] report_handler :23  info                      -> Aplying cleaner on RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:25[INFO ] report_handler :23  info                      -> 	Extention to delete: ['zzz', 'yyy', 'txt']
+07:17:25[INFO ] report_handler_test:461 apply_policy              -> Aplying archivator on RandomTest\SelfTest
+07:17:25[INFO ] report_handler_test:462 apply_policy              -> 	Create archive in RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler_test:463 apply_policy              -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler_test:464 apply_policy              -> 	Extentions to archive: ['txt']
+07:17:25[INFO ] report_handler_test:465 apply_policy              -> 	Delete archived files after succefull archivation:                    True
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Archivator #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['zzz', 'log', 'yyy', 'txt']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Archivator #2
+07:17:25[INFO ] report_handler :23  info                      -> 	Sourse path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive
+07:17:25[INFO ] report_handler :23  info                      -> 	Archive prefix: archive
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_arch: ['txt']
+07:17:25[INFO ] report_handler :23  info                      -> ============================================
+07:17:25[INFO ] report_handler :23  info                      -> Cleaner #1
+07:17:25[INFO ] report_handler :23  info                      -> 	Path: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2
+07:17:25[INFO ] report_handler :23  info                      -> 	age_before_del_hour: 1
+07:17:25[INFO ] report_handler :23  info                      -> 	ext_to_del: ['zzz', 'yyy', 'txt']
+07:17:25[INFO ] report_handler_test:280 rand_pre_test             -> Running pretest settings.
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest: ['file.txt', 'file.yyy', 'file.zzz']
+07:17:25[INFO ] report_handler_test:299 rand_pre_test             -> Files generated for C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2: ['file.log', 'file.txt', 'file.yyy', 'file.zzz']
+07:17:25[INFO ] report_handler_test:258 main_loop                 -> Current action:archive
+07:17:25[INFO ] report_handler_test:351 get_expected_FSM          -> Starting expect results FSM
+07:17:25[INFO ] report_handler_test:353 get_expected_FSM          -> --------------FSM state: INIT
+07:17:25[INFO ] report_handler_test:358 get_expected_FSM          -> Next FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:360 get_expected_FSM          -> --------------FSM state: DEFINE_ACTION
+07:17:25[INFO ] report_handler_test:369 get_expected_FSM          -> Next FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:371 get_expected_FSM          -> --------------FSM state: EXPECT_ARCHIVE
+07:17:25[INFO ] report_handler_test:392 get_expected_FSM          -> Next FSM state: END
+07:17:25[INFO ] report_handler_test:416 get_expected_FSM          -> --------------FSM state: END
+07:17:25[INFO ] report_handler_test:260 main_loop                 -> Expected results:{'in_sourse': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2': ['file.log', 'file.txt', 'file.yyy', 'file.zzz'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest': ['file.yyy', 'file.zzz']}, 'in_archive': {'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest2\\Archive': ['file.zzz', 'file.log', 'file.yyy', 'file.txt'], 'C:\\Users\\Alex\\source\\repos\\report-handler\\RandomTest\\SelfTest\\Archive': ['file.txt']}}
+07:17:25[INFO ] report_handler :23  info                      -> Archivation...
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest2\Archive\archive_1688271445.4520366.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.4520366.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created zip file: C:\Users\Alex\source\repos\report-handler\RandomTest\SelfTest\Archive\archive_1688271445.4551845.zip
+07:17:25[INFO ] report_handler :23  info                      -> Created archive name archive_1688271445.4551845.zip
