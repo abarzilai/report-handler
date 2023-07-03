@@ -2,6 +2,9 @@
 
 The tool keeps you project envieronment clean by delete or archive files with specified extensions.
 
+# Installation:
+pip install repler
+
 # Usage:
 
 # Create report handler with logging enable.
