@@ -1,6 +1,5 @@
 # repler: report handler
 
-
 The tool keeps you project envieronment clean by delete or archive files with specified extensions.
 Every time your script run, it produces logs, reports and other auxiliary files
 that relevant only for current execution.
@@ -9,8 +8,6 @@ And obviously you will not think about to explode your hard with enormous bulk o
 The idea is to define clean (the cleaner) and archive (archivator) policy on folders.
 Running report handler at start of each test will clean unwanted files and
 archive desired files for future use.
-
-The tool keeps you project environment clean by delete or archive files with specified extensions.
 
 # Installation:
 pip install repler
