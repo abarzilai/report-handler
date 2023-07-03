@@ -1,4 +1,4 @@
-# report-handler
+# repler: report handler
 
 The tool keeps you project envieronment clean by delete or archive files with specified extensions.
 
@@ -38,5 +38,8 @@ rh.archive()
 
 # Run both archive and clean
 rh.arcive_and_clean()
+
+# Enable report handler logging, if rh = ReportHandler(log_enable=False) 
+rh.set_log_on()
 
 
